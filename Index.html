@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My_summary</title>
+
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700,900' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/solid.css" integrity="sha384-osqezT+30O6N/vsMqwW8Ch6wKlMofqueuia2H7fePy42uC05rm1G+BUPSd2iBSJL" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/fontawesome.css" integrity="sha384-BzCy2fixOYd0HObpx3GMefNqdbA7Qjcc91RgYeDjrHTIEXqiF00jKvgQG0+zY/7I" crossorigin="anonymous">
+  <style>
+    #page-preloader {
+      position: fixed;
+      left: 0;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      background: #fff;
+      z-index: 100500;
+    }
+  </style>
+</head>
+
+<body>
+
+<div id="page-preloader"></div>
+
+<div class="row cont">
+    <div class="col-lg-2 col-md-4">
+    	<dropdown>
+        <input id="toggle1" type="checkbox" checked>
+        <label for="toggle1" class="animate">
+          MENU <i class="fa fa-list float-right"></i>
+        </label>
+        <ul class="animate">
+          <li class="animate">
+            <i class="fa fa-cog float-right"></i>HOME</li>
+          <li class="animate">
+            <i class="fa fa-arrows-alt float-right"></i>RESUME</li>
+          <li class="animate">
+            <i class="fa fa-code float-right"></i>SKILLS</li>
+          <li class="animate">
+            <i class="fa fa-cog float-right"></i>PORTFOLIO</li>
+          <li class="animate">
+            <i class="fa fa-cog float-right"></i>CONTACT</li>
+        </ul>
+      </dropdown>
+    </div>
+
+    <div class="col-lg-5 col-md-8">
+      <div class="block first-bl">
+        <p class="first-image">
+          <img class="img-responsive round" src = "images/Pirat_2.png">
+        </p>
+        <h1> Hi, i'm <span class="name">BOB ROS!</span> </h1>
+        <h2> Web designer and Developer </h2>
+        <hr>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <p class="center">
+          <button type="button" class="btn btn-res">
+            my_mail@gmail.com / phone +123 456 7890 </button>
+        </p>
+        <p class="center">
+          <a href="https://www.facebook.com/">
+            <img src="images/facebook-logo.png" width="50" height="50" alt="facebook"></a>
+          <a href="https://www.linkedin.com/">
+            <img src="images/linkedin-sign.png" width="50" height="50" alt="linkedin"></a>
+          <a href="https://mail.google.com/">
+            <img src="images/gmail-logo.png" width="60" height="60" alt="Mail"></a>
+        </p>
+      </div>
+    </div>
+
+    <div class="col-lg-5 offset-lg-0 col-md-8 offset-md-4">
+      <div class="block second-bl">
+        <h3> RESUME </h3>
+        <p class="center">
+          <a href="#" class="btn btn-res" role="button" aria-pressed="true">
+            DOWNLOAD RESUME </a>
+        	<a href="#" class="btn btn-res" role="button" aria-pressed="true">
+            GET IN TOUCH</a>
+        </p>
+        <div>
+          <h4> <i class="fas fa-landmark"></i> Education </h4>
+        </div>
+        <div class="block-sec">
+          <h5>Graphic Design</h5>
+          <p><span>Lorem ipsum dolor sit amet</span></p>
+          <hr>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+        <div class="block-sec">
+          <h5>Master of Web Design</h5>
+          <p><span>Lorem ipsum dolor sit amet</span></p>
+          <hr>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+      </div>
+    </div>
+</div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script type="text/javascript">$(window).on('load', function () {
+    var $preloader = $('#page-preloader');
+    $preloader.delay(50).fadeOut('slow');
+  });</script>
+
+</body>
+</html>

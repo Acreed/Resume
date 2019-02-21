@@ -1,0 +1,217 @@
+﻿
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  height: auto;
+  font-size: 14px;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; 
+  background: url("../images/back.jpg"); 
+  font-family: 'Gill Sans', sans-serif;  
+}
+
+.cont
+{
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 50px;
+}
+
+.block{
+  background: #fff;
+  height: 100%;
+  padding-right: 10%; 
+  padding-left: 10%;
+}
+
+.first-image{
+      text-align: center;
+}
+  .round {
+      border-radius: 100%; /* Радиус скругления */
+      box-shadow: 0 0 0 3px grey, 0 0 13px #333; /* Параметры теней */
+      /*width: 60%;*/
+      width: 300px;
+      margin-top: 70px;
+      margin-bottom: 20px;
+  }
+  @media only screen and (min-width: 992px) and (max-width: 1240px) {
+    .round {
+          width: 85%;
+      }
+  }
+
+.float-right{
+  float: right;
+}
+
+.name { 
+  color: #1ABC9C; /* Красный цвет символов */ 
+}
+
+.center{
+  text-align:center;
+}
+
+
+.fa{
+ font-size: .8em;
+  line-height: 22px !important;
+}
+dropdown{
+   display: inline-block;
+   width: 100%;
+}
+dropdown label, dropdown ul li{
+  display: block;
+  background: #ECF0F1;
+  padding: 15px 10px;
+  margin-bottom: 5px;
+}
+dropdown label:hover, dropdown ul li:hover{
+  display: block;
+  background: #1ABC9C;
+  color: white;
+  cursor: pointer;
+}
+dropdown label{
+  color: #1ABC9C;
+  border-left: 4px solid #1ABC9C;
+  border-radius: 0 5px 0 0; 
+  position: relative;
+  z-index: 2;
+}
+dropdown input{
+  display: none;
+}
+dropdown input ~ ul{
+  display: none;
+  position: relative;
+  visibility: hidden;
+  opacity: 0;
+  top: -20px;
+  z-index: 1;
+}
+dropdown input:checked + label{
+  background: #1ABC9C;
+  color: white;
+}
+
+dropdown input:checked ~ ul{
+  display: block;
+  visibility: visible;
+  opacity: 1;
+  top: 0;
+}
+$colors: #E74C3C, #FF0000, #FFFF00;
+
+@for $i from 1 through length($colors) {
+  dropdown ul li:nth-child(#{$i}) {
+    border-left: 4px solid nth($colors, $i);
+    .fa{
+      color: nth($colors, $i);
+    }
+    &:hover {
+        background: nth($colors, $i);
+        color: white;
+      .fa{
+        color: white; 
+      }
+    }
+  }
+}
+
+.animate{
+  -webkit-transition: all .3s;
+  -moz-transition: all .3s;
+  -ms-transition: all .3s;
+  -ms-transition: all .3s;
+  transition: all .3s;  
+  backface-visibility:hidden;
+  -webkit-backface-visibility:hidden; /* Chrome and Safari */
+  -moz-backface-visibility:hidden; /* Firefox */
+  -ms-backface-visibility:hidden; /* Internet Explorer */
+}
+
+h1 {
+  text-align: center;
+  font-weight: bold;
+}
+h2{
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 25px;
+}
+p{
+  text-align: justify;
+}
+h3{
+  font-size: 24px;
+  font-weight: bold;
+  padding-top: 1.5em;
+  padding-bottom: 0.5em;
+  border-bottom: 0.1em solid #0A604F;
+}
+h4{
+  color: #1ABC9C;
+  font-weight: bold;
+  border-left: 0.15em solid #1ABC9C;
+  padding-left: 0.7em;
+  padding-top: 0.4em;
+  padding-bottom: 0.4em;
+  margin-top: 20px;
+}
+h5{
+  font-weight: bold;
+}
+
+.block-sec{
+  border:0.3em double #aaa;
+  padding: 1em;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.block-sec span{
+  font-style: italic;
+}
+
+.btn-res {
+  display:inline-block;
+  padding:0.46em 1.6em;
+  border:0.1em solid #0A604F;
+  margin:0.8em 0 0.8em 0;
+  border-radius:0.12em;
+  box-sizing: border-box;
+  text-decoration:none;
+  font-weight:300;
+  color: #fff;
+  background-color: #FFFFFF;
+  transition: all 0.15s;
+  background: linear-gradient(to left, #198F77, #1ABC9C);
+  text-shadow: 0 0.04em 0.04em rgba(0,0,0,0.35);
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2), 0 3px 10px 0 rgba(0,0,0,0.19);
+}
+
+.btn-res:hover {
+  color: #000;
+  border-color: #0A604F;
+  background: linear-gradient(to left, #198F77, #1ABC9C);
+  text-shadow: 0 0 2em rgba(255,255,255,1);
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2), 0 3px 10px 0 rgba(0,0,0,0.19);
+}
+
+@media all and (max-width:30em){
+ .btn-res{
+  display:block;
+  margin: 0.4em auto;
+ }
+}
